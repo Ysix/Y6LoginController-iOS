@@ -21,7 +21,9 @@
 
 @property (nonatomic, weak) id<Y6LoginControllerDelegate> logDelegate;
 
-- (instancetype)initWithLoggedViewController:(UIViewController *)loggedViewController loginViewController:(UIViewController *)loginViewController andDelegate:(id<Y6LoginControllerDelegate>)delegate;
+- (instancetype)initWithLoggedViewController:(UIViewController *)loggedViewController
+                         loginViewController:(UIViewController *)loginViewController
+                                 andDelegate:(id<Y6LoginControllerDelegate>)delegate;
 - (void)userDidLogIn;
 - (void)userDidLogOut;
 

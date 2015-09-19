@@ -16,7 +16,9 @@
 
 @synthesize logDelegate;
 
-- (instancetype)initWithLoggedViewController:(UIViewController *)loggedViewController loginViewController:(UIViewController *)loginViewController andDelegate:(id<Y6LoginControllerDelegate>)theDelegate
+- (instancetype)initWithLoggedViewController:(UIViewController *)loggedViewController
+                         loginViewController:(UIViewController *)loginViewController
+                                 andDelegate:(id<Y6LoginControllerDelegate>)theDelegate
 {
 	if (self = [self init])
 	{
@@ -24,7 +26,7 @@
 		loggedVC = loggedViewController;
 		loginVC = loginViewController;
 
-		if(logDelegate && [logDelegate respondsToSelector:@selector(userIsLogged)])
+		if (logDelegate && [logDelegate respondsToSelector:@selector(userIsLogged)])
 		{
 			if ([logDelegate userIsLogged])
 			{
